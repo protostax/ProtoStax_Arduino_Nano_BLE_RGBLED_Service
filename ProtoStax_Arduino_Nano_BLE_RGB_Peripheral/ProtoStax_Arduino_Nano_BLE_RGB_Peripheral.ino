@@ -34,10 +34,11 @@
 
 #include <ArduinoBLE.h>
 
-
  #define RED_PIN 22     
  #define BLUE_PIN 24     
  #define GREEN_PIN 23
+
+ #define DEBUG true
 
 // These UUIDs have been randomly generated. - they must match between the Central and Peripheral devices
 // Any changes you make here must be suitably made in the Python program as well
@@ -51,6 +52,10 @@ BLEByteCharacteristic blueLEDCharacteristic("13012F03-F8C3-4F4A-A8F4-15CD926DA14
 
 void setup() {
     Serial.begin(9600);
+    
+    if (DEBUG) {
+      while(!Serial);
+    }
     
     // intitialize the LED Pins as an output
     pinMode(RED_PIN, OUTPUT);
@@ -88,7 +93,7 @@ void setup() {
 
     // start advertising
     BLE.advertise();
-
+    delay(100);
     Serial.println("ProtoStax Arduino Nano BLE LED Peripheral Service Started");
 }
 
