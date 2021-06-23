@@ -15,7 +15,9 @@ using
    might/can add
 * A PC (Windows, Mac, Linux, Raspberry Pi) with Bluetooth support and Python
 
-For further instructions, see the [Portable Capacitive Touch Piano](https://www.hackster.io/sridhar-rajagopal/protostax-capacitive-touch-piano-demo-2c38e9) Tutorial at [Hackster.io](https://www.hackster.io/sridhar-rajagopal/protostax-capacitive-touch-piano-demo-2c38e9)
+For further instructions, see the [Control Arduino Nano BLE's RGB LED with Bluetooth&Python
+](https://create.arduino.cc/projecthub/sridhar-rajagopal/control-arduino-nano-ble-s-rgb-led-with-bluetooth-python-331e33)
+Tutorial at [Arduino Project Hub](https://create.arduino.cc/projecthub/sridhar-rajagopal/control-arduino-nano-ble-s-rgb-led-with-bluetooth-python-331e33)
 
 
 ## Prerequisites
